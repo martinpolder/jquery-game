@@ -64,6 +64,8 @@ function Scoring() {
 
     $(".crystal-one").click(function () {
 
+
+        // call the counter variable and add the randomly generated value of the crystal
         counter += cOne;
 
         // console.log(counter);
