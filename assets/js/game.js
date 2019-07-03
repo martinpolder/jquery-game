@@ -55,11 +55,6 @@ function NumGen() {
 };
 
 
-// game scoring
-
-
-
-// add the assigned value to the counter every time a crystal is clicked
 function Scoring() {
     
     $(".crystal-one").click(function () {
@@ -68,6 +63,20 @@ function Scoring() {
 
         // console.log(counter);
         $(".score-display").html(counter);
+        if (counter === targetNum) {
+            alert("You win!");
+            Reset();
+    
+        }
+    
+    
+    
+        else if (counter >= targetNum) {
+            alert("You lose!!");
+            Reset();
+    
+        }
+    
 
    
      
@@ -82,6 +91,20 @@ function Scoring() {
 
         // console.log(counter);
         $(".score-display").html(counter);
+        if (counter === targetNum) {
+            alert("You win!");
+            Reset();
+    
+        }
+    
+    
+    
+        else if (counter >= targetNum) {
+            alert("You lose!!");
+            Reset();
+    
+        }
+    
     
 
     });
@@ -95,6 +118,20 @@ function Scoring() {
 
         // console.log(counter);
         $(".score-display").html(counter);
+        if (counter === targetNum) {
+            alert("You win!");
+            Reset();
+    
+        }
+    
+    
+    
+        else if (counter >= targetNum) {
+            alert("You lose!!");
+            Reset();
+    
+        }
+    
    
     
     });
@@ -108,6 +145,20 @@ function Scoring() {
 
         // console.log(counter);
         $(".score-display").html(counter);
+        if (counter === targetNum) {
+            alert("You win!");
+            Reset();
+    
+        }
+    
+    
+    
+        else if (counter >= targetNum) {
+            alert("You lose!!");
+            Reset();
+    
+        }
+    
 
        
     });
@@ -118,36 +169,14 @@ function Scoring() {
 
 // Winning and losing
 
-function WinLossReset() {
-    if (counter === targetNum) {
-        alert("You win!");
-        Reset();
-
-    }
 
 
 
-    else if (counter >= targetNum) {
-        alert("You lose!!");
-        Reset();
-
-    }
-
-
-};
-
-
-
-// full function list
-
-
-
-
-NumGen(); 
+NumGen();
 
 Scoring();
 
-WinLossReset();
+// WinLossReset();
 
 
 
