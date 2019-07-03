@@ -14,56 +14,142 @@ var cFour = [];
 
 // reset function
 
-// loop:
+function Reset() {
+    cOne = [];
+    cTwo = [];
+    cThree = [];
+    cFour = [];
+    targetNum = [];
+    counter = 0;
+    $(".score-display").html(counter);
+    NumGen();
+};
 
-document.onkeyup = function() {
-      
+function NumGen() {
+
+
     //generate target number
-        targetNum = Math.floor(Math.random() * 120) +19;
-        console.log(targetNum);
-        $(".target-number").html(targetNum);
+    targetNum = Math.floor(Math.random() * 120) + 19;
+    console.log(targetNum);
+    $(".target-number").html(targetNum);
+
+
+    // randomly generate value for crystals 
+
+    cOne = Math.floor(Math.random() * 12) + 1;
+    console.log(cOne);
+
+
+    cTwo = Math.floor(Math.random() * 12) + 1;
+    // console.log(cTwo);
+
+
+
+    cThree = Math.floor(Math.random() * 12) + 1;
+    // console.log(cThree);
+
+
+    cFour = Math.floor(Math.random() * 12) + 1;
+    // console.log(cFour);
+
+};
+
+
+// game scoring
+
+
+
+// add the assigned value to the counter every time a crystal is clicked
+function Scoring() {
+    
+    $(".crystal-one").click(function () {
+       
+        counter += cOne;
+
+        // console.log(counter);
+        $(".score-display").html(counter);
+
+   
+     
+    });
+    
+    
+ 
+    $(".crystal-two").click(function () {
+       
+
+        counter += cTwo;
+
+        // console.log(counter);
+        $(".score-display").html(counter);
+    
+
+    });
+  
+  
+   
+    $(".crystal-three").click(function () {
         
+
+        counter += cThree;
+
+        // console.log(counter);
+        $(".score-display").html(counter);
+   
+    
+    });
+
+
+   
+    $(".crystal-four").click(function () {
         
-        // randomly generate value for crystal one 
-        // apply it to crystal one using .attr
-        cOne = Math.floor(Math.random() * 12) + 1;
-            $(".crystal-one").attr(cOne);
-            console.log(cOne);
+
+        counter += cFour;
+
+        // console.log(counter);
+        $(".score-display").html(counter);
+
+       
+    });
+    
+};
 
 
-        // ditto for crystals two, three and four.
-        cTwo = Math.floor(Math.random() * 12) + 1;
-            $(".crystal-two").attr(cTwo);
-            console.log(cTwo);
 
-        cThree = Math.floor(Math.random() * 12) + 1;
-            $(".crystal-three").attr(cThree);
-            console.log(cThree);
+// Winning and losing
 
-        cFour = Math.floor(Math.random() * 12) + 1;
-            $(".crystal-four").attr(cFour);
-            console.log(cFour);
+function WinLossReset() {
+    if (counter === targetNum) {
+        alert("You win!");
+        Reset();
+
+    }
+
+
+
+    else if (counter >= targetNum) {
+        alert("You lose!!");
+        Reset();
+
+    }
 
 
 };
 
-// game scoring
-        //add each attributed value of the crystal added to the score counter when clicked
 
-$(".crystal-one").click = function() {
 
-    counter += cOne;
-    console.log("testing testing");
-
-}
+// full function list
 
 
 
 
+NumGen(); 
+
+Scoring();
+
+WinLossReset();
 
 
 
-// win/loss
-        //if the counter reaches the value of the randomly generated target number the player wins, display win message, game resets.
 
-        //if the counter goes over the value of the target number the player loses, display loss message, game resets.
+
