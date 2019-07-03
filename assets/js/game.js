@@ -12,6 +12,11 @@ var cTwo = [];
 var cThree = [];
 var cFour = [];
 
+
+// win and loss counters
+
+var wins = 1;
+var losses = 1;
 // reset function
 
 function Reset() {
@@ -65,6 +70,7 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
+            $("#wincounter").html(wins ++)
             Reset();
     
         }
@@ -73,6 +79,7 @@ function Scoring() {
     
         else if (counter >= targetNum) {
             alert("You lose!!");
+            $("#losscounter").html(losses ++)
             Reset();
     
         }
@@ -93,6 +100,7 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
+            $("#wincounter").html(wins ++)
             Reset();
     
         }
@@ -101,6 +109,7 @@ function Scoring() {
     
         else if (counter >= targetNum) {
             alert("You lose!!");
+            $("#losscounter").html(losses ++)
             Reset();
     
         }
@@ -120,6 +129,7 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
+            $("#wincounter").html(wins ++)
             Reset();
     
         }
@@ -128,6 +138,7 @@ function Scoring() {
     
         else if (counter >= targetNum) {
             alert("You lose!!");
+            $("#losscounter").html(losses ++)
             Reset();
     
         }
@@ -147,6 +158,7 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
+            $("#wincounter").html(wins ++)
             Reset();
     
         }
@@ -155,6 +167,7 @@ function Scoring() {
     
         else if (counter >= targetNum) {
             alert("You lose!!");
+            $("#losscounter").html(losses ++)
             Reset();
     
         }
