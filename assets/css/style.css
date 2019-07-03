@@ -4,18 +4,25 @@ h1 {
     text-align: center;
     margin-bottom: 5%;
 }
+/* 
+img {
+    /* width: %; */
+    
+
+
 
 
 .card-deck {
+    margin: 0 auto 0 auto;
     padding: 0;
     margin-top: 3%;
+    width: 70%;
+    
 
 }
 
-.card-img-overlay {
-    padding: 0;
-    margin-bottom: 1%;
-}
+
+
 
 .col-2 {
     text-align: right;
