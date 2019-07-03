@@ -61,38 +61,38 @@ function NumGen() {
 
 
 function Scoring() {
-    
+
     $(".crystal-one").click(function () {
-       
+
         counter += cOne;
 
         // console.log(counter);
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
-            $("#wincounter").html(wins ++)
+            $("#wincounter").html(wins++)
             Reset();
-    
+
         }
-    
-    
-    
+
+
+
         else if (counter >= targetNum) {
             alert("You lose!!");
-            $("#losscounter").html(losses ++)
+            $("#losscounter").html(losses++)
             Reset();
-    
-        }
-    
 
-   
-     
+        }
+
+
+
+
     });
-    
-    
- 
+
+
+
     $(".crystal-two").click(function () {
-       
+
 
         counter += cTwo;
 
@@ -100,28 +100,28 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
-            $("#wincounter").html(wins ++)
+            $("#wincounter").html(wins++)
             Reset();
-    
+
         }
-    
-    
-    
+
+
+
         else if (counter >= targetNum) {
             alert("You lose!!");
-            $("#losscounter").html(losses ++)
+            $("#losscounter").html(losses++)
             Reset();
-    
+
         }
-    
-    
+
+
 
     });
-  
-  
-   
+
+
+
     $(".crystal-three").click(function () {
-        
+
 
         counter += cThree;
 
@@ -129,28 +129,28 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
-            $("#wincounter").html(wins ++)
+            $("#wincounter").html(wins++)
             Reset();
-    
+
         }
-    
-    
-    
+
+
+
         else if (counter >= targetNum) {
             alert("You lose!!");
-            $("#losscounter").html(losses ++)
+            $("#losscounter").html(losses++)
             Reset();
-    
+
         }
-    
-   
-    
+
+
+
     });
 
 
-   
+
     $(".crystal-four").click(function () {
-        
+
 
         counter += cFour;
 
@@ -158,24 +158,24 @@ function Scoring() {
         $(".score-display").html(counter);
         if (counter === targetNum) {
             alert("You win!");
-            $("#wincounter").html(wins ++)
+            $("#wincounter").html(wins++)
             Reset();
-    
+
         }
-    
-    
-    
+
+
+
         else if (counter >= targetNum) {
             alert("You lose!!");
-            $("#losscounter").html(losses ++)
+            $("#losscounter").html(losses++)
             Reset();
-    
-        }
-    
 
-       
+        }
+
+
+
     });
-    
+
 };
 
 

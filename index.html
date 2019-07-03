@@ -17,74 +17,81 @@
 
 
 <body>
-<div class="container">
-    <h1>crystal game!</h1>
-    <h6>wins: <p id="wincounter">__</p> </h6>
-    <h6>losses: <p id="losscounter">__</p> </h6>
+    <div class="container">
+        <h1>crystal game!</h1>
 
-    <h3 class="score-display">___</h3>
-    <h3 class="target-number">___</h3>
 
-    <div class="card-deck">
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" class="card-img-top crystal-one" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Crystal One</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text">
+        <div class="row">
+            <div class="col-2">
+                <p>wins:</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" class="card-img-top crystal-two" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Crystal Two</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text">
+            <div class="col-4">
+                <p id="wincounter"></p>
             </div>
-        </div>
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" class="card-img-top crystal-three" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Crystal Three</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text">
+            <div class="col-2">
+                <p>losses:</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" class="card-img-top crystal-four" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Crystal four</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text">
+            <div class="col-4">
+                <p id="losscounter"></p>
             </div>
         </div>
 
+        <div class="gamecontainer">
+            <div class="row">
+                <div class="col-7">
+                    <h3>Your Score:</h3>
+                </div>
+                <div class="col-5">
+                    <h3 class="score-display"></h3>
+                </div>
+
+            </div>
 
 
 
-    
+            <div class="row">
+
+
+                <div class="col-7">
+                    <h3>Your Target:</h3>
+                </div>
+
+                <div class="col-5">
+                    <h3 class="target-number"></h3>
+                </div>
+
+            </div>
+
+
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png"
+                        class="card-img-top crystal-one" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png"
+                        class="card-img-top crystal-two" alt="...">
+
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png"
+                        class="card-img-top crystal-three" alt="...">
+
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png"
+                        class="card-img-top crystal-four" alt="...">
+
+                </div>
+            </div>
+
+
+
+        </div>
+
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
 
     <!-- jquery -->
